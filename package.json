@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "name": "my_ecommerce",
+  "scripts": {
+    "start": "lerna run start --parallel --stream",
+    "test": "lerna run test",
+    "new-version": "lerna version --conventional-commits --yes",
+    "diff": "lerna diff"
+  }
+}
