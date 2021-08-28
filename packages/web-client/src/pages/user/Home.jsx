@@ -1,18 +1,24 @@
 import React from 'react'
-import Footer from '../../components/user/Footer'
-import Header from '../../components/user/Header'
+
+import Partial from '../../components/user/Partial'
+import Helmet from '../../components/user/Helmet'
+import HeroSlider from '../../components/user/HeroSlider';
+import heroSliderData from '../../assets/fake-data/hero-slider';
 
 const Home = (props) => {
     return (
-        <div>
-            <Header {...props} />
-                <div className="container">
-                    <div className="main">
-                        Home
-                    </div>
-                </div>
-            <Footer/>
-        </div>
+        <Partial>
+            <Helmet title="Trang chủ">
+                {/* hero slider */}
+                <HeroSlider
+                    data={heroSliderData}
+                    control={true}
+                    auto={false}
+                    timeOut={5000}
+                />
+                {/* end hero slider */}
+            </Helmet>
+        </Partial>
     )
 }
 

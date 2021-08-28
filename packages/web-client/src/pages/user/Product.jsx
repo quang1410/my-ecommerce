@@ -1,19 +1,15 @@
 import React from 'react'
 
-import Footer from '../../components/user/Footer'
-import Header from '../../components/user/Header'
+import Partial from '../../components/user/Partial'
+import Helmet from '../../components/user/Helmet'
 
 const Product = (props) => {
     return (
-        <div>
-            <Header {...props} />
-                <div className="container">
-                    <div className="main">
-                        Product detail
-                    </div>
-                </div>
-            <Footer/>
-        </div>
+        <Partial>
+            <Helmet title="Trang chi tiết">
+                Product detail
+            </Helmet>
+        </Partial>
     )
 }
 

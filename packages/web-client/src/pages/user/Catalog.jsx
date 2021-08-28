@@ -1,19 +1,15 @@
 import React from 'react'
 
-import Footer from '../../components/user/Footer'
-import Header from '../../components/user/Header'
+import Partial from '../../components/user/Partial'
+import Helmet from '../../components/user/Helmet'
 
 const Catalog = (props) => {
     return (
-        <div>
-            <Header {...props} />
-                <div className="container">
-                    <div className="main">
-                        Catalog
-                    </div>
-                </div>
-            <Footer/>
-        </div>
+        <Partial>
+            <Helmet title="Sản Phẩm">
+                Catalog
+            </Helmet>
+        </Partial>
     )
 }
 
