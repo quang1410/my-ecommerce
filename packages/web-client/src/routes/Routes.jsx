@@ -7,6 +7,7 @@ import Catalog from '../pages/user/Catalog'
 import Cart from '../pages/user/Cart' 
 import DashBoard from '../pages/dashboard/Dashboard'
 import Customers from '../pages/dashboard/Customers'
+import Login from '../components/user/Form/Login'
 
 const Routes = (props) => {
     console.log(props);
@@ -18,6 +19,7 @@ const Routes = (props) => {
             <Route path='/cart' component={Cart}/>
             <Route path='/admin/customers' exact component={Customers}/>
             <Route path='/admin' component={DashBoard}/>
+            <Route path='/login' component={Login}/>
         </Switch>
     )
 }
