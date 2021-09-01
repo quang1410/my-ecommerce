@@ -1,10 +1,10 @@
 import React from 'react'
+import { Link,useLocation } from 'react-router-dom'
 
 import './Sidebar.css'
-import logo from '../../assets/images/logo.png'
+import logo from '../../../assets/images/Logo.png'
 
-import sidebar_items from '../../assets/JsonData/sidebar_routes.json'
-import { Link } from 'react-router-dom'
+import sidebar_items from '../../../assets/JsonData/sidebar_routes.json'
 
 const SidebarItem = props => {
     const active = props.active ? 'active' : ''
@@ -18,16 +18,17 @@ const SidebarItem = props => {
     )
 }
 
-const Sidebar = (props) => {
-    const activeItem = sidebar_items.findIndex(item => item.route === props.location.pathname)
+const Sidebar = () => {
+    const location = useLocation();
+    const activeItem = sidebar_items.findIndex(item => `/admin${item.route}` === location.pathname)
     return (
         <div className="sidebar">
-            <div className="sidebar__logo">
+            <Link to="/" className="sidebar__logo">
                 <img src={logo} alt="company logo"/>
-            </div>
+            </Link>
             {
                 sidebar_items.map((item,index)=>(
-                    <Link to={item.route} key={index}>
+                    <Link to={`/admin${item.route}`} key={index}>
                         <SidebarItem
                             title={item.display_name}
                             icon={item.icon}

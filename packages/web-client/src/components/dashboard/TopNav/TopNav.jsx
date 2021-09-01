@@ -2,15 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import Dropdown from '../Dropdown/Dropdown'
-import notifications from '../../assets/JsonData/notification.json'
-import user_image from '../../assets/images/tuat.png'
-import user_menu from '../../assets/JsonData/user_menus.json'
+import notifications from '../../../assets/JsonData/notification.json'
+import user_image from '../../../assets/images/Logo.png'
+import user_menu from '../../../assets/JsonData/user_menus.json'
 
 import './TopNav.css'
 import ThemeMenu from '../Theme/ThemeMenu'
 
 const curr_user = {
-    display_name: 'Tuat Tran',
+    display_name: 'Ngọc Quang',
     image: user_image
 }
 

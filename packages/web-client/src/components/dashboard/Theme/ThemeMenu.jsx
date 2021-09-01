@@ -2,7 +2,7 @@ import React,{ useRef,useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 
 import './ThemeMenu.css'
-import { themeActions } from '../../Store/Reducers/ThemeSlice';
+import { themeActions } from '../../../Store/Reducers/ThemeSlice';
 
 const mode_settings = [
     {
