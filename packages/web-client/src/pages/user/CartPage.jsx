@@ -2,15 +2,16 @@ import React from 'react'
 
 import Partial from '../../components/user/Partial'
 import Helmet from '../../components/user/Helmet'
+import Cart from '../../components/user/Cart/Cart'
 
-const Cart = (props) => {
+const CartPage = (props) => {
     return (
         <Partial>
             <Helmet title="Giỏ hàng">
-                Home
+                <Cart/>
             </Helmet>
         </Partial>
     )
 }
 
-export default Cart
+export default CartPage
