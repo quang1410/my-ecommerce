@@ -31,7 +31,7 @@ const Cart = () => {
           <h4>Thông tin đơn hàng</h4>
           <div className="price">
             Tạm Tính (1 SP)
-            <span>25.000.000đ</span>
+            <span>250.000đ</span>
           </div>
           <div className="delivery-fee">
             Phí giao hàng
@@ -49,7 +49,7 @@ const Cart = () => {
           </div>
           <div className="total">
             <h6 className="total__title">Tổng Cộng:</h6>
-            <span className="total__price">25.015.000đ</span>
+            <span className="total__price">265.000đ</span>
           </div>
           <div className="checkout">
             <Link

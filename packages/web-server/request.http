@@ -1,0 +1,127 @@
+GET http://localhost:5000
+
+###
+GET http://localhost:5000/product/get-product
+
+###
+POST http://localhost:5000/product/create-product
+Content-Type: application/json
+
+{
+    "title":"Áo thun Dinosaur 01",
+    "price":189000,
+    "image01":"https://zerdio.com.vn/wp-content/uploads/2021/03/mix-do-mua-he-nu.jpg",
+    "image02":"https://i.bloganchoi.com/bloganchoi.com/wp-content/uploads/2020/05/phoi-do-mua-he-2.jpg?fit=647%2C20000&quality=95&ssl=1",
+    "categorySlug":"ao-thun",
+    "description":"Sự hiện diện của những chiếc áo thun basic cổ tròn trong tủ đồ của bạn chính là chìa khóa giúp cho bạn có thêm nhiều outfit thú vị mà lại không cần đến quá nhiều món đồ. Áo thun nữ cotton cổ tròn basic chính là vũ khí tiện dụng cho các chị em trong trang phục hàng ngày!<br><br><br>Thiết kế đơn giản, form dáng tiện lợi của áo thun PPN4502. Tại sao chỉ với 1 chiếc áo thun nữ basic mà bạn có thể phối với 10 bộ độ khác nhau? Câu trả lời nằm ở chính sự đơn giản của chúng. Càng đơn giản, bạn lại càng dễ mix & match với những món đồ khác nhau.Áo thun nữ PPM4502 có thiết kế cổ tròn đơn giản, nhẹ nhàng tôn da. Tay cáo, form áo cũng không hề cầu kỳ, rất dễ mặc với nhiều thân hình khác nhau. Đặc biệt hơn, màu sắc của chiếc áo phông nữ cổ tròn này cũng rất nhã nhặn, trung tính, trơn màu. Sự tối giản từ thiết kế, đường may đến bảng màu giúp các chị em không cần đắn đo quá nhiều khi lựa chọn. Chất liệu cotton 95% được xử lý nghiêm ngặt, quy trình và công nghệ hiện đại nên mang tới cho chiếc áo sự thoải mái, mềm mại, thoáng mát ngay khi chạm vào. Cùng với đó, áo thun nữ cotton cổ tròn Yody có khả năng thâm shuts mồ hôi rất tốt nên người mặc không bị cảm giác bí bách, dính dính trên da khi đổ mồ hôi vào mùa hè. Bên cạnh đó, sản phẩm cũng chưa 5% spandex - loại sợi giúp co giãn, đàn hồi hiệu quả thích hợp mặc tới nhiều môi trường, ngay cả khi vận động <br><br><br> Sự hiện diện của những chiếc áo thun basic cổ tròn trong tủ đồ của bạn chính là chìa khóa giúp cho bạn có thêm nhiều outfit thú vị mà lại không cần đến quá nhiều món đồ. Áo thun nữ cotton cổ tròn basic chính là vũ khí tiện dụng cho các chị em trong trang phục hàng ngày!<br><br><br>Thiết kế đơn giản, form dáng tiện lợi của áo thun PPN4502. Tại sao chỉ với 1 chiếc áo thun nữ basic mà bạn có thể phối với 10 bộ độ khác nhau? Câu trả lời nằm ở chính sự đơn giản của chúng. Càng đơn giản, bạn lại càng dễ mix & match với những món đồ khác nhau.Áo thun nữ PPM4502 có thiết kế cổ tròn đơn giản, nhẹ nhàng tôn da. Tay cáo, form áo cũng không hề cầu kỳ, rất dễ mặc với nhiều thân hình khác nhau. Đặc biệt hơn, màu sắc của chiếc áo phông nữ cổ tròn này cũng rất nhã nhặn, trung tính, trơn màu. Sự tối giản từ thiết kế, đường may đến bảng màu giúp các chị em không cần đắn đo quá nhiều khi lựa chọn. Chất liệu cotton 95% được xử lý nghiêm ngặt, quy trình và công nghệ hiện đại nên mang tới cho chiếc áo sự thoải mái, mềm mại, thoáng mát ngay khi chạm vào. Cùng với đó, áo thun nữ cotton cổ tròn Yody có khả năng thâm shuts mồ hôi rất tốt nên người mặc không bị cảm giác bí bách, dính dính trên da khi đổ mồ hôi vào mùa hè. Bên cạnh đó, sản phẩm cũng chưa 5% spandex - loại sợi giúp co giãn, đàn hồi hiệu quả thích hợp mặc tới nhiều môi trường, ngay cả khi vận động",
+    "colors": ["white", "red", "orange"],
+    "sizes": ["s", "m","l"],
+    "quantitySizeOfEachColor":[
+        {
+            "color":"white",
+            "quantityOfEachSize":[
+                {
+                    "numberOfSizeS":100
+                },
+                {
+                    "numberOfSizeM":100
+                },
+                {
+                    "numberOfSizeL":100
+                }
+            ]
+        },
+        {
+            "color":"red",
+            "quantityOfEachSize":[
+                {
+                    "numberOfSizeS":100
+                },
+                {
+                    "numberOfSizeM":100
+                },
+                {
+                    "numberOfSizeL":100
+                }
+            ]
+        },
+        {
+            "color":"orange",
+            "quantityOfEachSize":[
+                {
+                    "numberOfSizeS":100
+                },
+                {
+                    "numberOfSizeM":100
+                },
+                {
+                    "numberOfSizeL":100
+                }
+            ]
+        }
+    ],
+    "slug":"ao-thun-dinosaur-01"
+}
+
+###
+PUT http://localhost:5000/product/update-product/6132ecf1eed4df1758f01247
+Content-Type: application/json
+
+{
+    "title":"Áo thun Dinosaur 01",
+    "price":189000,
+    "image01":"https://zerdio.com.vn/wp-content/uploads/2021/03/mix-do-mua-he-nu.jpg",
+    "image02":"https://i.bloganchoi.com/bloganchoi.com/wp-content/uploads/2020/05/phoi-do-mua-he-2.jpg?fit=647%2C20000&quality=95&ssl=1",
+    "categorySlug":"ao-thun",
+    "description":"Sự hiện diện của những chiếc áo thun basic cổ tròn trong tủ đồ của bạn chính là chìa khóa giúp cho bạn có thêm nhiều outfit thú vị mà lại không cần đến quá nhiều món đồ. Áo thun nữ cotton cổ tròn basic chính là vũ khí tiện dụng cho các chị em trong trang phục hàng ngày!<br><br><br>Thiết kế đơn giản, form dáng tiện lợi của áo thun PPN4502. Tại sao chỉ với 1 chiếc áo thun nữ basic mà bạn có thể phối với 10 bộ độ khác nhau? Câu trả lời nằm ở chính sự đơn giản của chúng. Càng đơn giản, bạn lại càng dễ mix & match với những món đồ khác nhau.Áo thun nữ PPM4502 có thiết kế cổ tròn đơn giản, nhẹ nhàng tôn da. Tay cáo, form áo cũng không hề cầu kỳ, rất dễ mặc với nhiều thân hình khác nhau. Đặc biệt hơn, màu sắc của chiếc áo phông nữ cổ tròn này cũng rất nhã nhặn, trung tính, trơn màu. Sự tối giản từ thiết kế, đường may đến bảng màu giúp các chị em không cần đắn đo quá nhiều khi lựa chọn. Chất liệu cotton 95% được xử lý nghiêm ngặt, quy trình và công nghệ hiện đại nên mang tới cho chiếc áo sự thoải mái, mềm mại, thoáng mát ngay khi chạm vào. Cùng với đó, áo thun nữ cotton cổ tròn Yody có khả năng thâm shuts mồ hôi rất tốt nên người mặc không bị cảm giác bí bách, dính dính trên da khi đổ mồ hôi vào mùa hè. Bên cạnh đó, sản phẩm cũng chưa 5% spandex - loại sợi giúp co giãn, đàn hồi hiệu quả thích hợp mặc tới nhiều môi trường, ngay cả khi vận động <br><br><br> Sự hiện diện của những chiếc áo thun basic cổ tròn trong tủ đồ của bạn chính là chìa khóa giúp cho bạn có thêm nhiều outfit thú vị mà lại không cần đến quá nhiều món đồ. Áo thun nữ cotton cổ tròn basic chính là vũ khí tiện dụng cho các chị em trong trang phục hàng ngày!<br><br><br>Thiết kế đơn giản, form dáng tiện lợi của áo thun PPN4502. Tại sao chỉ với 1 chiếc áo thun nữ basic mà bạn có thể phối với 10 bộ độ khác nhau? Câu trả lời nằm ở chính sự đơn giản của chúng. Càng đơn giản, bạn lại càng dễ mix & match với những món đồ khác nhau.Áo thun nữ PPM4502 có thiết kế cổ tròn đơn giản, nhẹ nhàng tôn da. Tay cáo, form áo cũng không hề cầu kỳ, rất dễ mặc với nhiều thân hình khác nhau. Đặc biệt hơn, màu sắc của chiếc áo phông nữ cổ tròn này cũng rất nhã nhặn, trung tính, trơn màu. Sự tối giản từ thiết kế, đường may đến bảng màu giúp các chị em không cần đắn đo quá nhiều khi lựa chọn. Chất liệu cotton 95% được xử lý nghiêm ngặt, quy trình và công nghệ hiện đại nên mang tới cho chiếc áo sự thoải mái, mềm mại, thoáng mát ngay khi chạm vào. Cùng với đó, áo thun nữ cotton cổ tròn Yody có khả năng thâm shuts mồ hôi rất tốt nên người mặc không bị cảm giác bí bách, dính dính trên da khi đổ mồ hôi vào mùa hè. Bên cạnh đó, sản phẩm cũng chưa 5% spandex - loại sợi giúp co giãn, đàn hồi hiệu quả thích hợp mặc tới nhiều môi trường, ngay cả khi vận động",
+    "colors": ["white", "red", "orange"],
+    "sizes": ["s", "m","l"],
+    "quantitySizeOfEachColor":[
+        {
+            "color":"white",
+            "quantityOfEachSize":[
+                {
+                    "numberOfSizeS":100
+                },
+                {
+                    "numberOfSizeM":100
+                },
+                {
+                    "numberOfSizeL":100
+                }
+            ]
+        },
+        {
+            "color":"red",
+            "quantityOfEachSize":[
+                {
+                    "numberOfSizeS":100
+                },
+                {
+                    "numberOfSizeM":100
+                },
+                {
+                    "numberOfSizeL":100
+                }
+            ]
+        },
+        {
+            "color":"orange",
+            "quantityOfEachSize":[
+                {
+                    "numberOfSizeS":100
+                },
+                {
+                    "numberOfSizeM":100
+                },
+                {
+                    "numberOfSizeL":100
+                }
+            ]
+        }
+    ],
+    "slug":"ao-thun-dinosaur-01"
+}
+
+###
+DELETE http://localhost:5000/product/delete-product/610f9ae92bc3e30cd41e533a
