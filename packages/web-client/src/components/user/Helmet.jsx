@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Helmet = (props) => {
-    console.log(document);
     document.title = 'Yolo - ' + props.title
 
     React.useEffect(() => {

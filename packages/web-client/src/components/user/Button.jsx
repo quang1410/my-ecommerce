@@ -13,6 +13,7 @@ const Button = props => {
         <button
             className={`btn ${bg} ${size} ${animate}`}
             onClick={props.onClick ? () => props.onClick() : null}
+            type={props.type}
         >
             <span className="btn__txt">{props.children}</span>
             {

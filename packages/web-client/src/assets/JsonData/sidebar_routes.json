@@ -15,9 +15,9 @@
         "icon": "bx bx-package"
     },
     {
-        "display_name": "Orders",
-        "route": "/orders",
-        "icon": "bx bx-cart"
+        "display_name": "Create Product",
+        "route": "/create-product",
+        "icon": "bx bx-news"
     },
     {
         "display_name": "Analytics",
