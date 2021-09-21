@@ -1,13 +1,15 @@
-import { configureStore } from '@reduxjs/toolkit'
-import ThemeSlice from './Reducers/ThemeSlice'
+import { init } from "@rematch/core";
+import selectPlugin from '@rematch/select'
 
-// Store
-const store = configureStore({
-	reducer: {
-		theme: ThemeSlice.reducer
-	}
-})
+import themeModel from "./models/themeModel";
+import cartModel  from "./models/cartModel";
 
-// Export
-export default store
+const store = init({
+    models : {
+        theme : themeModel,
+        cart : cartModel
+    },
+    plugins: [selectPlugin()]
+});
 
+export default store;

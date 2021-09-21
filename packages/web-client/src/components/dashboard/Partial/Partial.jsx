@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from 'react-redux'
 
 import Sidebar from '../sidebar/Sidebar'
 import TopNav from '../TopNav/TopNav'
-import { themeActions } from '../../../Store/Reducers/ThemeSlice';
 
 import '../../../assets/css/grid.css'
 import '../../../assets/css/theme.css'
@@ -20,9 +19,9 @@ const Partial = (props) => {
 
         const colorClass = localStorage.getItem('colorMode', 'theme-mode-light')
 
-        dispatch(themeActions.setMode(themeClass))
+        dispatch.theme.setMode(themeClass)
 
-        dispatch(themeActions.setColor(colorClass))
+        dispatch.theme.setColor(colorClass)
     }, [dispatch])
     return (
       <div className={`layout ${mode} ${color}`}>

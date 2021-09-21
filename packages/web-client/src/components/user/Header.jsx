@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { useSelector,useStore } from 'react-redux'
 
 import logo from '../../assets/images/Logo-2.png'
 
@@ -27,6 +28,8 @@ const Header = () => {
     const { pathname } = useLocation()
     const activeNav = mainNav.findIndex(e => e.path === pathname)
 
+    const { select } = useStore();
+    const cartSelect = useSelector(select(state => state.cart))
     const headerRef = useRef(null)
 
     useEffect(() => {
@@ -85,6 +88,7 @@ const Header = () => {
                         <div className="header__menu__item header__menu__right__item">
                             <Link to="/cart">
                                 <i className="bx bx-shopping-bag"></i>
+                                <span className="header__menu__right__item__shopping-bag">{cartSelect.quantityOfCart}</span>
                             </Link>
                         </div>
                         <div className="header__menu__item header__menu__right__item">

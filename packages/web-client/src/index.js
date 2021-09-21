@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from "react-redux"
 
 import Layout from './components/Layout';
-import store from './Store/index'
+import store from './store/index'
 
 import './sass/index.scss'
 

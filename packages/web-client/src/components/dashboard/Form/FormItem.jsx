@@ -7,14 +7,15 @@ const FormItem = (props) => {
     return (
         <div className="form__item">
             <label htmlFor={props.id} className="form__item__label">{props.title}</label>
-            <input 
+            <input
                 type={props.type}
                 id={props.id} 
                 name={props.name} 
                 value={props.value} 
                 placeholder={props.placeholder}
                 className="form__item__input"
-                onChange={props.onChange} 
+                onChange={props.onChange}
+                defaultValue={props.defaultValue} 
             />
         </div>
     )

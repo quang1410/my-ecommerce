@@ -4,7 +4,6 @@ import Footer from './Footer'
 import Header from './Header'
 
 const Partial = (props) => {
-    console.log(props)
     return (
         <>
             <Header {...props} />

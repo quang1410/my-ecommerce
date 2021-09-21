@@ -2,7 +2,6 @@ import React,{ useRef,useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 
 import './ThemeMenu.css'
-import { themeActions } from '../../../Store/Reducers/ThemeSlice';
 
 const mode_settings = [
     {
@@ -86,13 +85,13 @@ const ThemeMenu = () => {
     const setMode = mode => {
         setcurrMode(mode.id)
         localStorage.setItem('themeMode', mode.class)
-        dispatch(themeActions.setMode(mode.class))
+        dispatch.theme.setMode(mode.class)
     }
 
     const setColor = color => {
         setcurrColor(color.id)
         localStorage.setItem('colorMode', color.class)
-        dispatch(themeActions.setColor(color.class))
+        dispatch.theme.setColor(color.class)
     }
 
     useEffect(() => {

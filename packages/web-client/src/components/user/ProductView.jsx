@@ -1,11 +1,13 @@
 import React,{ useState,useEffect} from 'react'
 import PropTypes from 'prop-types'
+import { useDispatch } from 'react-redux'
 
 import { withRouter } from 'react-router'
 
 import Button from '../user/Button'
 
 const ProductView = (props) => {
+    const dispatch = useDispatch()
 
     const product = props.product
 
@@ -49,7 +51,17 @@ const ProductView = (props) => {
     }
 
     const addToCart = () => {
-        if (check()) console.log({color, size, quantity})
+        if (check()){
+            dispatch.cart.addItem({
+                slug: product.slug,
+                title:product.title,
+                image:product.image01,
+                price:product.price,
+                color,
+                size, 
+                quantity
+            })
+        }
     }
 
     const goToCart = () => {
